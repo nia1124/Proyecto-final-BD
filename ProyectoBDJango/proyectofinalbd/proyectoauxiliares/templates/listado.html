@@ -1,0 +1,23 @@
+<doctype html>
+<html>
+<head>
+</head>
+<body>
+<div id = "contenedor">
+<header>
+<hl>Project</hl>
+<h2>Trabajo del equipo hecho en Django</h2>
+</header>
+<section>
+{% for estudiante in estudiante.object_list %}
+<article>
+<h3>{{ estudiante.nombre}}</h3>
+<edad>{{estudiante.edad}}</edad>
+</article>
+{% endfor %}
+</section>
+<footer>
+(c) 2014 equipo
+</footer>
+</body>
+</html>
